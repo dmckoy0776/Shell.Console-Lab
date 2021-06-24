@@ -1,0 +1,29 @@
+dee@zipcodes-MacBook-Pro-2 ~ % mkdir ~/Dev
+dee@zipcodes-MacBook-Pro-2 ~ % pwd
+/Users/dee
+dee@zipcodes-MacBook-Pro-2 ~ % ls
+DayOneDemo	Dev		Downloads	Movies		Pictures
+Desktop		Documents	Library		Music		Public
+dee@zipcodes-MacBook-Pro-2 ~ % echo Hello Terminal >myFile.txt
+dee@zipcodes-MacBook-Pro-2 ~ % ls
+DayOneDemo	Documents	Movies		Public
+Desktop		Downloads	Music		myFile.txt
+Dev		Library		Pictures
+dee@zipcodes-MacBook-Pro-2 ~ % mv myFile.txt > Dev
+zsh: is a directory: Dev
+dee@zipcodes-MacBook-Pro-2 ~ % mv ~/MyFile.txt ~/Dev/MyFile.txt
+dee@zipcodes-MacBook-Pro-2 ~ % ls
+DayOneDemo	Dev		Downloads	Movies		Pictures
+Desktop		Documents	Library		Music		Public
+dee@zipcodes-MacBook-Pro-2 ~ % cd Dev
+dee@zipcodes-MacBook-Pro-2 Dev % ls
+MyFile.txt
+dee@zipcodes-MacBook-Pro-2 Dev % cat MyFile.txt
+Hello Terminal
+dee@zipcodes-MacBook-Pro-2 Dev % echo Hello ZipCode >myFile2.txt
+dee@zipcodes-MacBook-Pro-2 Dev % cat myFile.txt myFile2
+Hello Terminal
+cat: myFile2: No such file or directory
+dee@zipcodes-MacBook-Pro-2 Dev % cat myFile.txt myFile2.txt
+Hello Terminal
+Hello ZipCode
